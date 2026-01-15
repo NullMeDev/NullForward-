@@ -132,19 +132,14 @@ SUSPICIOUS_KEYWORDS = [
 ]
 
 # --- Command Button Layouts (ReplyKeyboardMarkup) ---
+# --- Command Button Layouts (ReplyKeyboardMarkup) ---
 COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
-    ["� Upload", "📂 Files", "⚡ Speed"],
-    ["📊 Stats", "📞 Owner", "📢 Updates"]
+    ["📤 Upload", "📂 Files", "⚡ Speed", "📊 Stats", "📞 Owner"]
 ]
 ADMIN_COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
-    ["📤 Upload", "📂 Files", "📢 Broadcast"],
-    ["⚡ Speed", "📊 Stats", "🔒 Lock"],
-    ["🟢 Code", "👑 Admin", "📞 Owner"]
+    ["📤 Upload", "📂 Files", "📢 BC", "⚡ Speed", "📊 Stats", "🔒 Lock", "🟢 Code", "👑 Admin"]
 ]
 
-# --- Database Setup ---
-def init_db():
-    """Initialize the database with required tables"""
     logger.info(f"Initializing database at: {DATABASE_PATH}")
     try:
         conn = sqlite3.connect(DATABASE_PATH, check_same_thread=False)
