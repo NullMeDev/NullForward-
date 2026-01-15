@@ -133,19 +133,13 @@ SUSPICIOUS_KEYWORDS = [
 
 # --- Command Button Layouts (ReplyKeyboardMarkup) ---
 COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
-    ["📢 Updates Channel"],
-    ["📤 Upload File", "📂 Check Files"],
-    ["⚡ Bot Speed", "📊 Statistics"],
-    ["📤 Send Command", "📞 Contact Owner"]
+    ["� Upload", "📂 Files", "⚡ Speed"],
+    ["📊 Stats", "📞 Owner", "📢 Updates"]
 ]
 ADMIN_COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
-    ["📢 Updates Channel"],
-    ["📤 Upload File", "📂 Check Files"],
-    ["⚡ Bot Speed", "📊 Statistics"],
-    ["📢 Broadcast"],
-    ["🔒 Lock Bot", "🟢 Running All Code"],
-    ["📤 Send Command", "👑 Admin Panel"],
-    ["📞 Contact Owner"]
+    ["📤 Upload", "📂 Files", "📢 Broadcast"],
+    ["⚡ Speed", "📊 Stats", "🔒 Lock"],
+    ["🟢 Code", "👑 Admin", "📞 Owner"]
 ]
 
 # --- Database Setup ---
