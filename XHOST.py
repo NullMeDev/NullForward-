@@ -76,7 +76,12 @@ FILE_UPLOAD_LIMIT = float('inf')
 os.makedirs(UPLOAD_BOTS_DIR, exist_ok=True)
 os.makedirs(IROTECH_DIR, exist_ok=True)
 
-# Initialize bot
+# --- Logging Setup (moved before bot initialization) ---
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+# Initialize bot (now logger is defined)
 try:
     bot = telebot.TeleBot(TOKEN)
     logger.info(f"✅ Bot initialized with token (last 10 chars: ...{TOKEN[-10:]})")
@@ -125,11 +130,6 @@ SUSPICIOUS_KEYWORDS = [
     b'keylogger',
     b'rootkit',
 ]
-
-# --- Logging Setup ---
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
 
 # --- Command Button Layouts (ReplyKeyboardMarkup) ---
 COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
