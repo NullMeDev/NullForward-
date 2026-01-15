@@ -1,0 +1,43 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Bot data
+inf/
+upload_bots/
+*.log
+*.db
+
+# OS
+.DS_Store
+.config/
+.local/
+.var/
+Trash/
+.nvm/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Misc
+*.tmp
+temp/
